@@ -4,7 +4,7 @@ const protect = (req, res, next) => {
   if (!user) {
     return res.status(400).json({
       status: "fail",
-      message: "You are not logged in",
+      message: "You are not logged in, please try again",
     });
   }
 
